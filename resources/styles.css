@@ -28,36 +28,47 @@ header {
     margin-left: 10px;
     height: 50px;
     overflow: hidden;
+
 }
 .logo-container img {
     max-height: 100%;
     width: auto;
     display: block;
+    flex-shrink: 0;
 }
-header nav {
-    width: 30%;
-}
+
 header nav ul {
     display: flex;
     justify-content: space-around; 
     list-style-type: none;
-    max-width: 100%;
+    width: 100%;
+ 
+} 
+header  nav li {
+    margin: 0;
+}
+header nav ul li:last-child {
+    margin-right: 40px;
 }
 header nav ul a {
 
     color: seashell; 
-
+}
+@media only screen and (max-width: 570px){
+    header nav ul li {
+        font-size:16px ;
+    }
 }
 main {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-
-
+    flex-wrap: wrap;
+}
+.banner, .products , .locations {
+    margin: 0 auto;
 }
 .banner {
     width: 1200px;
-    height: 700px;
+    min-height: 700px;
     background-image: url('images/img-mission-background.webp');
     background-position: center;
     background-repeat: no-repeat;
@@ -93,7 +104,7 @@ main {
     margin-top: 10px;
 }
 .locations {
-    height: 500px;
+    min-height: 500px;
     width: 1200px; 
     background-image: url('images/img-locations-background.webp');
     background-position: center;
@@ -118,3 +129,11 @@ main {
     opacity: 1;
     z-index: 5;
 } 
+footer {
+    text-align: center;
+    width: 100%;
+}
+#cr {
+    margin-left: 20px;
+    text-align: left;
+}
