@@ -1,0 +1,120 @@
+
+body  {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: seashell;
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+
+}
+
+header {
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    opacity: 0.9;
+
+
+}
+
+.logo-container {
+    margin-left: 10px;
+    height: 50px;
+    overflow: hidden;
+}
+.logo-container img {
+    max-height: 100%;
+    width: auto;
+    display: block;
+}
+header nav {
+    width: 30%;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around; 
+    list-style-type: none;
+    max-width: 100%;
+}
+header nav ul a {
+
+    color: seashell; 
+
+}
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.banner {
+    width: 1200px;
+    height: 700px;
+    background-image: url('images/img-mission-background.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.h-container {
+    background-color: black;
+    text-align:center;
+    width: 100%;
+}
+.products {
+    width: 1000px;
+    text-align: center;
+}
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box {
+    width: 300px;
+    overflow: hidden;
+}
+.box img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 30px 10px 30px; 
+}
+.box h4 {
+    margin-top: 10px;
+}
+.locations {
+    height: 500px;
+    width: 1200px; 
+    background-image: url('images/img-locations-background.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.l-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.location{
+    margin: 20px;
+    width: 300px;
+    background-color: black;
+    opacity: 1;
+    z-index: 5;
+} 
